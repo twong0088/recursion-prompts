@@ -11,7 +11,7 @@ var factorial = function(n) {
     return 1;
   }
   else if (n<0){
-    return -1;
+    return null;
   }
   else {
     return n*factorial(n-1);
