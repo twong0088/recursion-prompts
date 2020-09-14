@@ -40,13 +40,10 @@ var arraySum = function(array) {
       else{
         return 0;
       }
-
     }
-
-  else {
-    array[0]+sum(Array.prototype.slice.call(array,1));
-  }
-
+    else {
+      array[0]+sum(Array.prototype.slice.call(array,1));
+    }
   }
 
   else {
