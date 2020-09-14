@@ -38,7 +38,7 @@ var arraySum = function(array) {
         return array[0][0]+sum(Array.prototype.slice.call(array[0],1));
       }
       else{
-        return 0;
+        return sum(Array.prototype.slice.call(1));
       }
     }
     else {
