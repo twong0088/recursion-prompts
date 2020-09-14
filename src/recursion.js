@@ -34,17 +34,12 @@ var sum = function(array) {
 var arraySum=function(array){
   if (array.length!==0){
     if (Array.isArray(array[0])){
-      if (array[0].length!==0){
-        return array[0][0]+arraySum(Array.prototype.slice.call(array[0],1));
-      }
-      else {
-        return arraySum(Array.prototype.slice.call(array,1));
-      }
+      sum(array[0])+arraySum(Array.prototype.slice.call(array,1))
 
     }
 
     else {
-      return array[0]+arraySum(Array.prototype.slice.call(arr,1));
+      return array[0]+arraySum(Array.prototype.slice.call(array,1));
     }
   }
 
