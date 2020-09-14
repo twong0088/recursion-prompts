@@ -33,7 +33,7 @@ var sum = function(array) {
 // arraySum([1,[2,3],[[4]],5]); // 15
 var arraySum = function(array) {
   if (array.length!==0){
-    if (Array.isArray(array[0]){
+    if (Array.isArray(array[0])){
       if (array[0].length!==0){
         return array[0][0]+sum(Array.prototype.slice.call(array[0],1));
       }
