@@ -35,7 +35,7 @@ var arraySum=function(array){
 
   if (array.length!==0){
     if (Array.isArray(array[0]) && array[0].length>1){
-      return Number(sum(array[0]))+Number(arraySum(Array.prototype.slice.call(array,1)));
+      return Number(arraySum(array[0]))+Number(arraySum(Array.prototype.slice.call(array,1)));
     }
     else {
       return Number(array[0])+Number(arraySum(Array.prototype.slice.call(array,1)));
