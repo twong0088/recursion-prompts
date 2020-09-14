@@ -22,7 +22,7 @@ var factorial = function(n) {
 // sum([1,2,3,4,5,6]); // 21
 var sum = function(array) {
   if (array.length!==0){
-    return array[0]+sum(Array.prototype.slice.call(array,1))
+    return array[0]+sum(Array.prototype.slice.call(array,1));
   }
   else {
     return 0;
@@ -32,6 +32,26 @@ var sum = function(array) {
 // 3. Sum all numbers in an array containing nested arrays.
 // arraySum([1,[2,3],[[4]],5]); // 15
 var arraySum = function(array) {
+  if (array.length!==0){
+    if (Array.isArray(array[0]){
+      if (array[0].length!==0){
+        return array[0][0]+sum(Array.prototype.slice.call(array[0],1));
+      }
+      else{
+        return 0;
+      }
+
+    }
+
+  else {
+    array[0]+sum(Array.prototype.slice.call(array,1));
+  }
+
+  }
+
+  else {
+    return 0;
+  }
 };
 
 // 4. Check if a number is even.
